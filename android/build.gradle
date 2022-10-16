@@ -7,7 +7,7 @@ buildscript {
         }
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.5.3'
+            classpath 'com.android.tools.build:gradle:4.0.1'
         }
     }
 }
@@ -22,10 +22,9 @@ android {
     compileSdkVersion safeExtGet('BeeCore_compileSdkVersion', 29)
     defaultConfig {
         minSdkVersion safeExtGet('BeeCore_minSdkVersion', 16)
-        targetSdkVersion safeExtGet('BeeCore_targetSdkVersion', 29)
+        targetSdkVersion safeExtGet('BeeCore_targetSdkVersion', 23)
         versionCode 1
         versionName "1.0"
-
     }
 
     buildTypes {
@@ -56,4 +55,5 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation files('bee-core.aar')
 }

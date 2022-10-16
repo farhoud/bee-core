@@ -37,7 +37,7 @@
     "android"
   ],
   "repository": "https://github.com/bee-messenger/react-native-bee-core",
-  "author": ".m7@gmail.com <farhoud.m7@gmail.com> (https://github.com/farhoud)",
+  "author": "farhoud <farhoud.m7@gmail.com> (https://github.com/farhoud)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bee-messenger/react-native-bee-core/issues"

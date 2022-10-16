@@ -16,7 +16,11 @@ public class BeeCorePackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new BeeCoreModule(reactContext));
+        try {
+            modules.add(new BeeCoreModule(reactContext));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return modules;
     }
 
